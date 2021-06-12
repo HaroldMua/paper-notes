@@ -4,7 +4,7 @@
 
 ## 目录(TOC)
 
-* [AI系统(AI system)](#AI系统(AI system))
+* [AI系统(AI system)](#AI系统)
     * [模型推理(Model inference)](#模型推理Model inference)
 * [嵌入式(Embedded)]
 
