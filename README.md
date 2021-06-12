@@ -5,12 +5,15 @@
 ## 目录(TOC)
 
 * [AI系统(AI system)](#AI系统)
-    * [模型推理(Model inference)](#模型推理Model inference)
-* [嵌入式(Embedded)]
+    * [模型推理(Model inference)](#模型推理)
+      * [Irina](#Irina)
+* [嵌入式(Embedded)](#嵌入式)
 
 ## AI系统(AI system)
 
 ### 模型推理(Model inference)
+
+#### Irina
 
 [Irina: Accelerating DNN Inference with Efficient Online Scheduling](https://henryhxu.github.io/share/xiaorui-apnet20.pdf)
 
