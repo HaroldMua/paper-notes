@@ -2,23 +2,53 @@
 
 这个 repo 希望能够记录自己阅读论文的过程.
 
-## 目录(TOC)
+## General Resources
 
-* [AI系统(AI system)](#AI系统)
-    * [模型推理(Model inference)](#模型推理)
-      * [Irina](#Irina)
-* [嵌入式(Embedded)](#嵌入式)
+- [Survey](#survey)
+- [Book](#book)
+- [Video](#video)
+- [Course](#course)
+- [Blog](#blog)
 
-## AI系统(AI system)
 
-### 模型推理(Model inference)
+## System for AI Papers (Ordered by Category)
 
-#### Irina
+- [Data Processing](data_processing.md#data-processing)
+- [Training System](training.md#training-system)
+- [Inference System](inference.md#inference-system)
+- [Machine Learning Infrastructure](infra.md#machine-learning-infrastructure)
+- [AutoML System](AutoML_system.md#automl-system)
+- [Deep Reinforcement Learning System](drl_system.md#deep-reinforcement-learning-system)
+- [Edge AI](edge_system.md#edge-or-mobile-papers)
+- [Video System](video_system.md#video-system)
+- [GNN System](GNN_system.md#system-for-gnn-traininginference)
+- [Federated Learning System](federated_learning_system.md#federated-learning-system)
 
-[Irina: Accelerating DNN Inference with Efficient Online Scheduling](https://henryhxu.github.io/share/xiaorui-apnet20.pdf)
+## System for ML or ML for System on Top System Conference 
 
-```
-// TODO Add the notes
-```
+### Conferene
 
-## 嵌入式(Embedded)
+- MLsys [[2021 notes]](./note/MLSys2021.md)
+- NSDI [[2021 notes]](./note/NSDI2021.md)
+- OSDI [[2020 notes]](./note/OSDI2020.md)
+- SOSP
+- ATC
+- Eurosys [[2021 notes]](./note/Eurosys2021.md)
+- Middleware
+- SoCC [[2019]](https://acmsocc.github.io/2019/schedule.html) [[2020]](https://acmsocc.github.io/2020/accepted-papers.html)
+- TinyML [[2021]](https://openreview.net/group?id=tinyml.org/tinyML/2021/Research_Symposium)
+
+### Workshop
+
+- NIPS learning system workshop
+- ICML learning system workshop
+- OptML (Rising Star)
+- HotCloud
+- HotEdge
+- HotEdge
+- HotOS
+- NetAI (ACM SIGCOMM Workshop on Network Meets AI & ML)
+- EdgeSys (EuroSys workshop about edge computing) [[website]](https://edge-sys.github.io/2021/)
+- EuroMLSys [[website]](https://www.euromlsys.eu/#schedule)
+- Large-Scale Distributed Systems and Middleware (LADIS) (EuroSys workshop) [[website]](https://haoc2021.cs.jhu.edu/)
+
