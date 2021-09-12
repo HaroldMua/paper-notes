@@ -28,3 +28,9 @@ System for machine learning inference.
   - Low-Latency Model Execution. Different levels of optimization are required to achieve low-latency serving. DLIS supports both system- and model-level optimizations. [[paper]](https://www.usenix.org/conference/atc18/presentation/zhang-minjia). 我们主要关注系统层次的优化。
     - Resource Isolation and Data Locality
     - Server-to-Model Communication
+
+- INFaaS: Automated Model-less Inference Serving. *Francisco Romero*. **ATC**, 2021 [[paper]](https://www.usenix.org/system/files/atc21-romero.pdf) [[github]](https://github.com/stanford-mast/INFaaS) (Citations 2)
+  - 同样地，将ML lifecycle划分为训练和推理两阶段。并指出推理服务系统面临的挑战：
+    - Diverse application requirements. 准确性、时效性要求不同。
+    - Heterogeneous execution environments. CPU/GPU/TPU等异构执行环境。
+    - Diverse model-variants. 如TVM编译优化。
