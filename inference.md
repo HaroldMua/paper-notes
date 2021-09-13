@@ -40,3 +40,19 @@ System for machine learning inference.
     - Heterogeneous execution environments. CPU/GPU/TPU等异构执行环境。
     - Diverse model-variants. 如TVM编译优化。
   - 这种论文，涉及复杂的工程实现(c++), 多种软硬因素（如上，model-variant由多种变量定义）,不适合个人研究者。
+
+## Scheduling
+- A survey on scheduling and load balancing techniques in cloud computing environment. *Subhadra Shaw*. 2014 
+
+- Paragon: QoSAware Scheduling for Heterogeneous Datacenters. *Christina Delimitrou*. 2013
+
+- Interference-Aware Scheduling for Inference Serving. *Daniel Mendoza*. **EuroMLSys**. 2021 [[paper]](https://dl.acm.org/doi/10.1145/3437984.3458837) [[yotube]](https://www.youtube.com/watch?v=cB3vnQirNhs)
+  - 问题：
+    - 调度是考虑模型和硬件的属性，具体是什么呢？
+    - 延迟是如何表征的？
+    - 模型间的干扰程度如何评定？
+  - 使用机器学习模型学习推理模型特征与共同位置延迟劣化之间的映射，但没有介绍技术实现。
+  - 未开源代码。
+
+- Co-scheML: Interference-aware Container Co-scheduling Scheme Using Machine Learning Application Profiles for GPU Clusters. *Sejin Kim*. **IEEE International Conference on Cluster Computing (CLUSTER)**, 2020 [[paper]](https://ieeexplore.ieee.org/abstract/document/9229615)
+
