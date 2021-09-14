@@ -2,6 +2,10 @@
 
 System for machine learning inference.
 
+## Potential ideas
+- Horizontal Autoscaling of pods
+- 
+
 ## Benchmark
 - Wanling Gao, Fei Tang, Jianfeng Zhan, et al. "AIBench: A Datacenter AI Benchmark Suite, BenchCouncil". [[Paper]](https://arxiv.org/pdf/2005.03459.pdf) [[Website]](https://www.benchcouncil.org/AIBench/index.html)
 - BaiduBench: Benchmarking Deep Learning operations on different hardware. [[Github]](https://github.com/baidu-research/DeepBench#inference-benchmark)
@@ -49,7 +53,7 @@ System for machine learning inference.
     - Olympian extends TF-Serving to enable fair sharing of a GPU across multiple concurrent large DNNs at low overhead, a capability TF-Serving by itself is not able to achieve
   - mentioned that, DNN models consist of a large number of GPU kernels, and a model serving system like TF-serving queues these kernels in the underlying GPU driver, leaving it to the hardware to schedule kernel execution. Since the driver cannot, in general, differentiate between kernels belonging to different DNNs invoked by different clients, two DNNs with identical computing needs can finish at completely different times. 这个特点，既可以用调度方案缓解，也可以用编译优化（算子融合）方法缓解。Dig more!!!
   - In this paper, we explore techniques to carefully schedule the use of a GPU by multiple concurrent DNNs in a model-serving system like TF-Serving.
-  -   - ![Olympian_architecture.png](./imgs/Olympian_architecture.png)
+  - ![Olympian_architecture.png](./imgs/Olympian_architecture.png)
   - 技术点：
     - 扩展TF Serving(C++实现),而非K8S?
     - GPU isolation, but provided by TF-Serving?
@@ -58,14 +62,6 @@ System for machine learning inference.
   - 启发：
     - 我不具备扩展TF-Serving的能力，而具备扩展K8S的能力；
     - GPU硬件层，还是使用CUDA API劫持的方式实现GPU资源隔离。
-   
-  
-  
-  
-
-- A survey on scheduling and load balancing techniques in cloud computing environment. *Subhadra Shaw*. 2014 
-
-- Paragon: QoSAware Scheduling for Heterogeneous Datacenters. *Christina Delimitrou*. 2013
 
 - Interference-Aware Scheduling for Inference Serving. *Daniel Mendoza*. **EuroMLSys**. 2021 [[paper]](https://dl.acm.org/doi/10.1145/3437984.3458837) [[yotube]](https://www.youtube.com/watch?v=cB3vnQirNhs)
   - 问题：
@@ -75,6 +71,14 @@ System for machine learning inference.
   - 使用机器学习模型学习推理模型特征与共同位置延迟劣化之间的映射，但没有介绍技术实现。
   - 未开源代码。
 
+- Irina: Accelerating DNN Inference with Efficient Online Scheduling. *Xiaorui Wu*. **APNET**. 2020 [[paper]](https://dl.acm.org/doi/abs/10.1145/3411029.3411035)
+  - Irina, a novel DNN inference scheduler tailored to reducing delay under unpredictable workloads. It explores several strategies that are largely overlooked in existing systems to efficiently share the available (GPU) resources and minimize average inference delay.
+  - ![Irina_simulation_average_JCT.png](./imgs/Irina_simulation_average_JCT.png)
+
+
 - Co-scheML: Interference-aware Container Co-scheduling Scheme Using Machine Learning Application Profiles for GPU Clusters. *Sejin Kim*. **IEEE International Conference on Cluster Computing (CLUSTER)**, 2020 [[paper]](https://ieeexplore.ieee.org/abstract/document/9229615) (Citations 1)
 
+- A survey on scheduling and load balancing techniques in cloud computing environment. *Subhadra Shaw*. 2014 
+
+- Paragon: QoSAware Scheduling for Heterogeneous Datacenters. *Christina Delimitrou*. 2013
 
