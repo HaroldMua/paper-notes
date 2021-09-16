@@ -74,6 +74,7 @@ System for machine learning inference.
 - Irina: Accelerating DNN Inference with Efficient Online Scheduling. *Xiaorui Wu*. **APNET**. 2020 [[paper]](https://dl.acm.org/doi/abs/10.1145/3411029.3411035)
   - Irina, a novel DNN inference scheduler tailored to reducing delay under unpredictable workloads. It explores several strategies that are largely overlooked in existing systems to efficiently share the available (GPU) resources and minimize average inference delay.
   - ![Irina_simulation_average_JCT.png](./imgs/Irina_simulation_average_JCT.png)
+  - 未开源代码，应该也是扩展TF-Serving.
 
 
 - Co-scheML: Interference-aware Container Co-scheduling Scheme Using Machine Learning Application Profiles for GPU Clusters. *Sejin Kim*. **IEEE International Conference on Cluster Computing (CLUSTER)**, 2020 [[paper]](https://ieeexplore.ieee.org/abstract/document/9229615) (Citations 1)
