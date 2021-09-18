@@ -2,6 +2,9 @@
 
 System for machine learning inference.
 
+- [Blog](#Blog)
+
+
 ## Potential ideas
 - Horizontal Autoscaling of pods
 - 
@@ -82,4 +85,43 @@ System for machine learning inference.
 - A survey on scheduling and load balancing techniques in cloud computing environment. *Subhadra Shaw*. 2014 
 
 - Paragon: QoSAware Scheduling for Heterogeneous Datacenters. *Christina Delimitrou*. 2013
+
+## Blog
+
+- 算法平台在线服务体系的演进与实践，美团技术. [[link]](https://mp.weixin.qq.com/s/lLpqX9idaS_6FP5Gl7lqRw)
+  - 需求
+    - 支持多框架
+    - 支持GPU和CPU
+    - batch_size为1的推理无法充分利用GPU资源，要单卡运行多个服务（单容器多服务或者多容器多服务）
+  - 要点
+    - 进程、线程、协程中选择协程（Gevent协程库提供并发）
+	- Flask作为WSGI Web框架
+	- 每个容器运行一个在线服务进程（或者，每个容器运行一个服务进程，运行多个容器？），支持加载多个服务（模型），服务的数量由模型大小和显存大小决定
+	- 计算机视觉模型大小普遍在小几百MB，一张8G的GPU可加载十几个服务
+	- 模型管理仓库
+	- HDFS作模型的存储中心
+	- 采用Redis将结果缓存在内存
+	
+- 通用深度学习推理服务， 58同城. [[github]](https://github.com/wuba/dl_inference)
+  - Tensorflow Serving可以直接读取SavedModel格式模型文件进行部署，支持gRPC和RESTful API调用
+  - pytorch不提供服务化部署组件，需要用户自己开发实现。一种是用服务化框架进行封装，如使用Flask框架部署一个HTTP服务，编写API进行请求处理，API里调用pytorch推理函数；第二种是ONNX→onnx格式→Tensorflow模型→Tensorflow Serving 
+  - 基于Seldon对pytorch进行封装提供RPC服务调用
+
+- 面向大规模AI在线推理的可靠性设计, UCloud. [[lind]](https://mp.weixin.qq.com/s/Ehb2cRH549Wb29ErkyAR9w)
+
+- 模型在线推系统的高可用设计, 京东数科. [[link]](https://blog.csdn.net/JDDTechTalk/article/details/108635914ew=1)
+
+- online serving的工程难题，知乎. [[link]](https://zhuanlan.zhihu.com/p/77664408)
+  - 评论有亮点， 如：
+    - 在线Serving的挑战在于低延时，高吞吐，大批量：
+      - 延时即E2E完成一个请求预测的时间，我认为可以通过缓存技术，计算加速(OpenBLAS/MKL/CUDA)，还有Approximate技术(没有实践过)来实现；
+	  - 在保证单机TPS的前提下，吞吐量交给k8s来做；
+	  - 认为这几个问题中大批量是最难的，当请求的batch size从上百到成千上万，E2E延时就是个大问题了，比较挫的方法时客户端加并行，不知道还有没有更好的办法
+
+
+
+
+
+
+
 
