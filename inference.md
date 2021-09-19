@@ -23,6 +23,8 @@ System for machine learning inference.
   - 没有开源代码，基于Linux cgroup实现的CPU资源虚拟化和基于 与Timegraph: Gpu scheduling for real-time multi-tasking environments类似思想实现的GPU虚拟化（提供运行时信息，推测与时间片模式相似），亦没有介绍技术细节；
   - 该论文的GPU虚拟化遵循（C，P）表示的周期性资源模型。对于每个时段P，容器可以使用时间C之前的GPU资源。如果容器因GPU的非抢占特性而超限，则将在下一时段为容器分配较少的配额。如果一个容器在一段时间内使用GPU资源的时间少于C，那么它将在下一个时间段内通过向容器分配更大的配额来进行补偿；
   - 上一点，相较于KubeShare的GPU共享方案，推测同是利用时间片模式。不如kubeshare。
+  
+- Container orchestration with cost-efficient autoscaling in cloud computing environments. *M Rodriguez*. 2018 [[paper]](https://arxiv.org/abs/1812.00300) (Citations 26)
 
 ## Serving
 
