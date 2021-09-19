@@ -25,7 +25,12 @@ System for machine learning inference.
   - 上一点，相较于KubeShare的GPU共享方案，推测同是利用时间片模式。不如kubeshare。
 
 ## Serving
+
 - DeepCPU: Serving RNN-based Deep Learning Models 10x Faster. *Minjia Zhang*. **ATC**, 2018 [[paper]](https://www.usenix.org/conference/atc18/presentation/zhang-minjia) (Citations 67)
+
+- Accelerating Large Scale Deep Learning Inference through DeepCPU at Microsoft. *Minjia Zhang*. **OpML**, 2019 [[paper]](https://www.usenix.org/conference/opml19/presentation/zhang-minjia) (Citations 6)
+  - 介绍性论文. Introduction内容可以借鉴
+  
 
 - Deep Learning Inference Service at Microsoft. *Jonathan Soifer*. **OpML**, 2019 [[paper]](https://www.usenix.org/conference/opml19/presentation/soifer) (Citations 10)
   - 描述了深度学习推理服务（Deep learning inference service, DLIS）的特点和作用，为什么需要DLIS;

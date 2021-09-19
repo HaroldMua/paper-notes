@@ -3,8 +3,7 @@
 Frameworks, infra and useful toolkits (e.g., visulization) for training, inference or both. You can check [[AI infrastructures list]](https://github.com/1duo/awesome-ai-infrastructures) for more.
 
 - [Paper](#paper)
-- [Project with code](#project)
-- [GPU sharing](#gpu-sharing)
+- [Project with code](#ML Platform)
 - [Tool](#userful-tools)
 
 ## Paper
@@ -27,6 +26,25 @@ Frameworks, infra and useful toolkits (e.g., visulization) for training, inferen
   - Hindman, Benjamin, et al
   - NSDI. Vol. 11. No. 2011. 2011.
 
+### GPU Sharing
+
+- Yu, P. and Chowdhury, M., 2019. Salus: Fine-Grained GPU Sharing Primitives for Deep Learning Applications. arXiv preprint arXiv:1902.04610. [[Paper]](https://arxiv.org/pdf/1902.04610.pdf) [[GitHub]](https://github.com/SymbioticLab/Salus)
+- gpushare-scheduler-extender [[GitHub]](https://github.com/AliyunContainerService/gpushare-scheduler-extender)
+  - More and more data scientists run their Nvidia GPU based inference tasks on Kubernetes. Some of these tasks can be run on the same Nvidia GPU device to increase GPU utilization. So one important challenge is how to share GPUs between the pods
+
+### Infrastructure
+
+- A Cloud-Based Framework for Machine Learning Workloads and Applications. *`LVARO LÓPEZ GARC˝A*, **IEEE Access**, 2019 [[paper]](https://ieeexplore.ieee.org/abstract/document/8950411) (Citations 21)
+
+
+### Review
+
+- A Berkeley View of Systems Challenges for AI. *Ion Stoica*, 2017 [[paper]](https://arxiv.org/abs/1712.05855) (Citations 161)
+
+- Cloud Programming Simplified: A Berkeley View on Serverless Computing. *Eric Jonas*, 2019 [[paper]](https://arxiv.org/abs/1902.03383) (Citations 247)
+
+- 
+  
 
 ## ML Platform
 - Submitit is a lightweight tool for submitting Python functions for computation within a Slurm cluster [[GitHub]](https://github.com/facebookincubator/submitit)
@@ -55,12 +73,7 @@ Frameworks, infra and useful toolkits (e.g., visulization) for training, inferen
 - GNES is Generic Neural Elastic Search, a cloud-native semantic search system based on deep neural network. [[GitHub]](https://github.com/gnes-ai/gnes)
 
 
-## GPU Sharing
 
-- Yu, P. and Chowdhury, M., 2019. Salus: Fine-Grained GPU Sharing Primitives for Deep Learning Applications. arXiv preprint arXiv:1902.04610. [[Paper]](https://arxiv.org/pdf/1902.04610.pdf) [[GitHub]](https://github.com/SymbioticLab/Salus)
-- gpushare-scheduler-extender [[GitHub]](https://github.com/AliyunContainerService/gpushare-scheduler-extender)
-  - More and more data scientists run their Nvidia GPU based inference tasks on Kubernetes. Some of these tasks can be run on the same Nvidia GPU device to increase GPU utilization. So one important challenge is how to share GPUs between the pods
-  
   
 ## Userful Tools
 
