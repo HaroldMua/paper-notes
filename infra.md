@@ -3,7 +3,7 @@
 Frameworks, infra and useful toolkits (e.g., visulization) for training, inference or both. You can check [[AI infrastructures list]](https://github.com/1duo/awesome-ai-infrastructures) for more.
 
 - [Paper](#paper)
-- [Project with code](#ML Platform)
+- [Project with code](#ML platform)
 - [Tool](#userful-tools)
 
 ## Paper
@@ -29,7 +29,7 @@ Frameworks, infra and useful toolkits (e.g., visulization) for training, inferen
 ### GPU Sharing
 
 - Yu, P. and Chowdhury, M., 2019. Salus: Fine-Grained GPU Sharing Primitives for Deep Learning Applications. arXiv preprint arXiv:1902.04610. [[Paper]](https://arxiv.org/pdf/1902.04610.pdf) [[GitHub]](https://github.com/SymbioticLab/Salus)
-- gpushare-scheduler-extender [[GitHub]](https://github.com/AliyunContainerService/gpushare-scheduler-extender)
+- gpushare-scheduler-extender [[GitHub]](https://github.com/AliyunContainerService/gpushare-scheduler-extender)  [[link]](https://developer.aliyun.com/article/690623)
   - More and more data scientists run their Nvidia GPU based inference tasks on Kubernetes. Some of these tasks can be run on the same Nvidia GPU device to increase GPU utilization. So one important challenge is how to share GPUs between the pods
 
 ### Infrastructure
@@ -46,7 +46,7 @@ Frameworks, infra and useful toolkits (e.g., visulization) for training, inferen
 - 
   
 
-## ML Platform
+## ML platform
 - Submitit is a lightweight tool for submitting Python functions for computation within a Slurm cluster [[GitHub]](https://github.com/facebookincubator/submitit)
 - Jittor is a high-performance deep learning framework based on JIT compiling and meta-operators.[[GitHub]](https://github.com/Jittor/jittor)
 - MindSpore is a new open source deep learning training/inference framework that could be used for mobile, edge and cloud scenarios.[[GitHub]](https://github.com/mindspore-ai/mindspore)

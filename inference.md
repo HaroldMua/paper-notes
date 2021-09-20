@@ -25,14 +25,18 @@ System for machine learning inference.
   - 上一点，相较于KubeShare的GPU共享方案，推测同是利用时间片模式。不如kubeshare。
   
 - Container orchestration with cost-efficient autoscaling in cloud computing environments. *M Rodriguez*. 2018 [[paper]](https://arxiv.org/abs/1812.00300) (Citations 26)
+  - 一种全面的容器资源管理方法：
+    - 确定容器的初始放置位置
+    - 根据集群的工作负载自动调整容器数量
+    - 重调度机制，将新增的容器调度到负载较低的节点
+
+- Jily: Cost-Aware AutoScaling of Heterogeneous GPU for DNN Inference in Public Cloud. *Zhaoxing Wang*. **IEEE International Conference on Performance, Computing and Communications (IPCCC)**, 2019 [[paper]](https://ieeexplore.ieee.org/abstract/document/8958770) (Citations 0)
 
 ## Serving
-
 - DeepCPU: Serving RNN-based Deep Learning Models 10x Faster. *Minjia Zhang*. **ATC**, 2018 [[paper]](https://www.usenix.org/conference/atc18/presentation/zhang-minjia) (Citations 67)
 
 - Accelerating Large Scale Deep Learning Inference through DeepCPU at Microsoft. *Minjia Zhang*. **OpML**, 2019 [[paper]](https://www.usenix.org/conference/opml19/presentation/zhang-minjia) (Citations 6)
   - 介绍性论文. Introduction内容可以借鉴
-  
 
 - Deep Learning Inference Service at Microsoft. *Jonathan Soifer*. **OpML**, 2019 [[paper]](https://www.usenix.org/conference/opml19/presentation/soifer) (Citations 10)
   - 描述了深度学习推理服务（Deep learning inference service, DLIS）的特点和作用，为什么需要DLIS;
@@ -55,8 +59,12 @@ System for machine learning inference.
     - Diverse model-variants. 如TVM编译优化。
   - 这种论文，涉及复杂的工程实现(c++), 多种软硬因素（如上，model-variant由多种变量定义）,不适合个人研究者。
 
-## Scheduling
+- Towards Designing a Self-Managed Machine Learning Inference Serving System in Public Cloud. *JR Gunasekaran*. 2020 [[paper]](https://arxiv.org/abs/2008.09491) (Citations 1)
 
+- Deep Learning Inference in Facebook Data Centers: Characterization, Performance Optimizations and Hardware Implications. *Jongsoo Park*. 2018 [[paper]](https://arxiv.org/abs/1811.09886) (Citations 114)
+
+
+## Scheduling
 - Olympian: Scheduling GPU Usage in a Deep Neural Network Model Serving System. *Yitao Hu*. **Middleware**. 2018 [[paper]](https://dl.acm.org/doi/10.1145/3274808.3274813) (Citations 7)
   - What is it?
     - we consider the problem of carefully scheduling multiple concurrent DNNs in a serving system on a single GPU to achieve fairness or service differentiation objectives, a capability crucial to cloud-based TF-Serving offerings.
@@ -125,6 +133,9 @@ System for machine learning inference.
 	  - 在保证单机TPS的前提下，吞吐量交给k8s来做；
 	  - 认为这几个问题中大批量是最难的，当请求的batch size从上百到成千上万，E2E延时就是个大问题了，比较挫的方法时客户端加并行，不知道还有没有更好的办法
 
+- 谷歌云使用GPU. [[link]](https://cloud.google.com/kubernetes-engine/docs/how-to/gpus)
+
+- 谷歌云自动扩展机器学习预测. [[link]](https://cloud.google.com/blog/products/ai-machine-learning/scaling-machine-learning-predictions)
 
 
 
