@@ -32,6 +32,8 @@ System for machine learning inference.
 
 - Jily: Cost-Aware AutoScaling of Heterogeneous GPU for DNN Inference in Public Cloud. *Zhaoxing Wang*. **IEEE International Conference on Performance, Computing and Communications (IPCCC)**, 2019 [[paper]](https://ieeexplore.ieee.org/abstract/document/8958770) (Citations 0)
 
+- InferLine: Latency-Aware Provisioning and Scaling for Prediction Serving Pipelines. *Daniel Crankshaw*. **SoCC**, 2020 [[paper]](https://dl.acm.org/doi/abs/10.1145/3419111.3421285) (Citations 6)
+
 ## Serving
 - DeepCPU: Serving RNN-based Deep Learning Models 10x Faster. *Minjia Zhang*. **ATC**, 2018 [[paper]](https://www.usenix.org/conference/atc18/presentation/zhang-minjia) (Citations 67)
 
@@ -62,6 +64,8 @@ System for machine learning inference.
 - Towards Designing a Self-Managed Machine Learning Inference Serving System in Public Cloud. *JR Gunasekaran*. 2020 [[paper]](https://arxiv.org/abs/2008.09491) (Citations 1)
 
 - Deep Learning Inference in Facebook Data Centers: Characterization, Performance Optimizations and Hardware Implications. *Jongsoo Park*. 2018 [[paper]](https://arxiv.org/abs/1811.09886) (Citations 114)
+
+- [Daniel Crankshaw](https://dancrankshaw.com/)
 
 
 ## Scheduling
