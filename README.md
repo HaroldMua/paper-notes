@@ -24,6 +24,7 @@
 - [GNN System](GNN_system.md#system-for-gnn-traininginference)
 - [Federated Learning System](federated_learning_system.md#federated-learning-system)
 - [Auto System](auto_system.md#auto-system)
+- [Scheduling](Scheduling.md#scheduling)
 
 ## System for ML or ML for System on Top System Conference 
 
