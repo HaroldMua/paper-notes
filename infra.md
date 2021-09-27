@@ -3,8 +3,9 @@
 Frameworks, infra and useful toolkits (e.g., visulization) for training, inference or both. You can check [[AI infrastructures list]](https://github.com/1duo/awesome-ai-infrastructures) for more.
 
 - [Paper](#paper)
-- [Project with code](#ML platform)
+- [ML platform](#ML platform)
 - [Tool](#userful-tools)
+- [Accelerator](#Accelerator)
 
 ## Paper
 
@@ -102,3 +103,7 @@ Frameworks, infra and useful toolkits (e.g., visulization) for training, inferen
 - Faiss: A library for efficient similarity search and clustering of dense vectors [[GitHub]](https://github.com/facebookresearch/faiss)
 - Microsoft/MMdnn: A comprehensive, cross-framework solution to convert, visualize and diagnose deep neural network models.[[GitHub]](https://github.com/Microsoft/MMdnn)
 - Example recipes for Kubernetes Network Policies that you can just copy paste [[GitHub]](https://github.com/ahmetb/kubernetes-network-policy-recipes)
+
+## Accelerator
+
+- AI Accelerator Survey and Trends. *Albert Reuther*. 2021 [[paper]](https://arxiv.org/abs/2109.08957)
