@@ -54,4 +54,6 @@
 - EuroMLSys [[website]](https://www.euromlsys.eu/#schedule)
 - Large-Scale Distributed Systems and Middleware (LADIS) (EuroSys workshop) [[website]](https://haoc2021.cs.jhu.edu/)
 
+## blog
 
+- [Production-level-deep-learning](https://github.com/alirezadir/Production-Level-Deep-Learning)
