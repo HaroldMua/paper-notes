@@ -43,7 +43,7 @@ System for machine learning inference.
 - Deep Learning Inference Service at Microsoft. *Jonathan Soifer*. **OpML**, 2019 [[paper]](https://www.usenix.org/conference/opml19/presentation/soifer) (Citations 10)
   - 描述了深度学习推理服务（Deep learning inference service, DLIS）的特点和作用，为什么需要DLIS;
   - 图1显示了DLIS及其关键组件的概述。Model Master（MM）是一个单例编排器，负责通过考虑模型需求和硬件资源，将模型容器智能地配置到一个或多个服务器上。模型服务器（MS）是服务器单元，可以有数千个。它们有两个角色：路由和模型执行。MS接收来自客户端的传入请求，并将其有效地路由到承载所请求模型实例的另一个MS。从路由服务器接收请求的MS随后以低延迟执行请求。
-  - ![DLIS_Architecture.png](./imgs/DLIS_Architecture.png)
+  - ![DLIS_Architecture.png](imgs/DLIS_Architecture.png)
   - 描述了DLIS的所需组件，以及各组件(Intelligent model placement, low-latency model execution, efficient routing)的功能.个人工作重点在前两个;
   - Intelligent model placement
     - Model Placement
